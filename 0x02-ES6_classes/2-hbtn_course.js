@@ -39,7 +39,7 @@ export default class HolbertonCourse {
    * Setter for the name of the course.
    * @param {string} newName - The new name for the course.
    * @throws {TypeError} - Throws a TypeError if the new name is not a string.
-   */
+   */ 
   set name(newName) {
     // Checking and validating the input type.
     if (typeof newName !== 'string') {
