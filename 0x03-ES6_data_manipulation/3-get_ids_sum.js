@@ -1,6 +1,8 @@
-// Calculates and returns the sum of all student IDs in the provided list.
-// Utilizes the reduce method with an accumulator and the arrow function to add up the 'id' property of each student object.
-export default function getStudentIdsSum(studentList) {
-  const reducer = (accumulator, currentValue) => accumulator + currentValue.id;
-  return studentList.reduce(reducer, 0);
+/**
+ * Calculates and returns the sum of student IDs in the provided list.
+ * @param {Array} students - An array of student objects.
+ * @returns {number} - The sum of student IDs.
+ */
+export default function getStudentIdsSum(students) {
+  return students.reduce((sum, student) => student.id + sum, 0);
 }
